@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.titulo-role {
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    font-family: 'Rock Salt', cursive;
+}
+
+.ultimos-roles, .titulo-video, .titulo-membros{
+    border: solid 3px rgb(248, 248, 248);
+    font-family: 'Courier New', Courier, monospace
+}
+
+a{
+    text-decoration: none;
+    color: inherit;    
+}
+
+h2{
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    /* padding-bottom: 25px; */
+    margin-top: 30px;
+    background-color: rgb(43, 39, 39);
+    /* border-bottom: solid 2px rgb(197, 180, 180); */
+}
+
+.paragrafo-aside {
+    border-bottom: solid 1px rgb(114, 111, 111);
+}
+
+video{
+    margin-top: 40px;
+}
+
+.role{
+    width: 250px;
+    margin-bottom: 10%;
+    
+}
+
+body{
+    display: flex;
+    margin: 3px;
+    flex: 1 1 100vw;
+    flex-wrap: wrap;
+}
+
+header, nav, main, aside, footer{
+    display: flex;
+    margin: 10px;
+}
+
+header{
+    flex: 1 1 100vw;
+    height: 111px;
+    border: 1px solid white;
+    
+}
+
+#logo {
+    border-bottom: 1px solid white;
+    height: 110px;
+    /* margin-bottom: -10px; */
+}
+
+header #logo {
+    flex: 0 1 200px;
+    /* background-color: #000000; */
+}
+
+#openMenu, #closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav a {
+    margin: 3%;
+    font-size: 25pt;
+}
+
+nav{
+    margin-bottom: 8px;
+    flex: 1 1 100vw;   
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3c3c;
+    color: white;
+}
+
+#release-df147 {
+    text-align: center;
+    font-size: xx-large;
+    /* font-weight: bolder; */
+    color: rgb(5, 5, 5);
+    /* position: fixed; */
+    /* width: 1620px; */
+    margin-top: 55%;
+    border-top: 1px solid #ffffff;
+    /* border-bottom: 1px solid #ffa4a4; */
+    font-family: 'Bruno Ace SC', cursive;
+    background-color: rgb(177, 174, 174);
+    line-height: 95px;
+    height: 1231px;
+    opacity: 80%;
+}
+
+main{
+    flex: 1 1 500px;  
+    height: 1300px;
+    background-image: url('../src/background/IMG_2644.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 50%;      
+}
+
+aside{
+    /* background-image: url('../src/background/Muro.jpeg'); */
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    /* font-weight: bolder; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Seymour One', sans-serif;   */
+    border: solid 1px white;
+    background-color: #3d3c3d;
+    /* opacity: 60%; */
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100vw;   
+    height: 100px;
+    background-color: #3d3c3c;
+    border: 1px solid white;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.titulo-footer{    
+    border-bottom: solid 1px rgb(14, 14, 14);
+}
+
+.logo-spotify{
+    width: 130px;
+    margin-left: 25px;
+    /* border: 1px solid red; */
+}
+
+.logo-instagram{
+    width: 38px;
+    margin-left: 25px;
+    /* border: 1px solid red; */    
+}
+
+.logo-deezer{
+    width: 205px;
+    margin-left: 25px;
+    /* border: 1px solid red; */
+}
+
+.logo-yt {
+    width: 100px;
+    margin-left: 25px;
+    /* border: 1px solid red; */
+}
+
+#right-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.membros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: start;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+    #openMenu, #closeMenu {
+        display: block;
+    }
+
+    #openMenu {
+        color: white;
+        margin: auto;
+    }
+
+    #closeMenu {
+        color: red;
+        position: fixed;
+        top: 15px;
+    }
+
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .indice{
+        background-color: black;
+    }
+
+    body {
+        width: 350px;
+    }
+
+    main{
+        margin-top: -280px;
+        /* height: 1050px; */
+    }
+
+    #release-df147{
+        margin-top: 185%;
+        /* width: 700px; */
+        height: 425px;
+        line-height: 20px;
+        font-size: medium;
+    }
+
+    aside{
+        margin-top: -250px;
+    }
+
+    .membros{
+        margin-bottom: 40px;
+    }
+}
